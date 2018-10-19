@@ -1,0 +1,25 @@
+
+.DS_Store
+.vscode
+.idea
+
+## Excludes all node_module directories
+node_modules/
+
+## Exclude all log files (including npm-debug.log)
+*.log
+
+## Exclude MS/Libre Office swap files
+~$*.pptx
+~$*.docx
+~$*.xlsx
+
+# Exclude webpack bundles
+bundle.js
+# Exclude build folders
+build/
+**/build/
+
+# Exclude yarn.lock for child folders
+**/yarn.lock
+!/yarn.lock
