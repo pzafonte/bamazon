@@ -48,7 +48,12 @@ function start() {
         {
           name: "quantity",
           type: "input",
-          message: "How many would you like to buy?"
+          message: "How many would you like to buy?",
+          //Checks to make sure it's a whole number
+          validate: function (value) {
+            let isValid = !isNaN(value) && parseInt(Number(value)) == value && !isNaN(parseInt(value, 10));
+            return isValid || "You need to enter a whole number!"
+          }
         }
       ])
 
