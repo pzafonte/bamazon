@@ -160,7 +160,7 @@ function addProduct() {
           "message" : "Enter the product name:",
           "validate": function(value) {
             return (value !== "");}
-      }
+      },
       {
           "type": "input",
           "name": "price",
