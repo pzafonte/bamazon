@@ -6,7 +6,7 @@ bamazon is a basic amazon-like command line interface that gets product and depa
 
 
 ## How to Run
-To run bamazon, you will need [Bash], [Node](https://nodejs.org/), and [npm](https://www.npmjs.com/) MySql(https://www.mysql.com/).
+To run bamazon, you will need Bash, [Node](https://nodejs.org/), [npm](https://www.npmjs.com/), and [MySql](https://www.mysql.com/).
 
 1. In Bash, type `git clone git@github.com:pzafonte/bamazon.git` to download bamazon.
 
