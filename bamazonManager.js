@@ -2,6 +2,9 @@ var mysql = require("mysql");
 var inquirer = require("inquirer");
 const {table} = require('table');
 
+let departments = {}, items = {};
+
+
 // create the connection information for the sql database
 var connection = mysql.createConnection({
   host: "localhost",
@@ -14,6 +17,20 @@ var connection = mysql.createConnection({
 // connect to the mysql server and sql database
 connection.connect(function (err) {
   if (err) throw err;
+
+  //Get local copy of data
+
+ 
+
+// connection.query('SELECT department_id, department_name FROM departments;', function(err, results) {
+//       if (err) throw err;
+
+//       //get local copy of database data
+
+//       results[0].forEach(r => departments[r.department_name] = r.department_id);
+//       results[1].forEach(r => items[r.product_name] = r.item_id);
+            
+// });
   // run the start function after the connection is made to prompt the user
   start();
 });
@@ -53,7 +70,8 @@ function start() {
             addInventoryToItem();
             break;
           case 3:
-            addProduct();
+            console.log("Feature not working yet...")
+            start();
             break;
           default:
             start();
